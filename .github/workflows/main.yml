@@ -18,3 +18,5 @@ jobs:
       - uses: actions/checkout@v3
       - name : after
         run: ls
+        -name: login
+        run: docker login --username Malk Osama --password dckr_pat__D93EKR2ns0mwu0Gq9O2oDV3Zak  

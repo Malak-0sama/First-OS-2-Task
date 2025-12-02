@@ -19,4 +19,4 @@ jobs:
       - name : after
         run: ls
         -name: login
-        run: docker login --username Malk Osama --password dckr_pat__D93EKR2ns0mwu0Gq9O2oDV3Zak  
+        run: docker login --username {{secrets.DOCKER_USERNAME}} --password {{secrets.DOCKER_TOKEN}}  

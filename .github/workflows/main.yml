@@ -1,19 +1,19 @@
-on:
-push :
-branches:
-  -master
+  
 
+   name: Test Workflow
 
+   on:
+   push:
+    branches:
+      - master
 
+   jobs:
+   build:
+    runs-on: ubuntu-latest
 
+    steps:
+      - name: "Testing GITHUB"
+        run: pwd
 
-jobs:
-build:
-runs on:ubunto-latest:
-
-steps:
-   -name: "Testing GITHUB"
-   run: pwd
-   -name: "printing folder contents"
-   run: ls
-   
+      - name: "Printing folder contents"
+        run: ls

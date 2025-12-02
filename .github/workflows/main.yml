@@ -1,19 +1,17 @@
-  
+name: Test Workflow
 
-   name: Test Workflow
-
-   on:
-   push:
+on:
+  push:
     branches:
-      - main
+      - main   # أو غيريها للفرع اللي عندك فعلياً
 
-   jobs:
-   build:
+jobs:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: "Testing GITHUB"
+      - name: Testing GITHUB
         run: pwd
 
-      - name: "Printing folder contents"
+      - name: Printing folder contents
         run: ls

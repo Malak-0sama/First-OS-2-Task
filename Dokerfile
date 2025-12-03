@@ -6,9 +6,3 @@ RUN javac malak.java
 CMD java malak
 
 
-
-FROM openjdk:17-slim
-COPY . /app
-WORKDIR /app
-RUN javac Malak.java
-CMD ["java", "Malak"]

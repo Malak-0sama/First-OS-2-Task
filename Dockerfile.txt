@@ -9,4 +9,3 @@ RUN javac malak.java
 CMD ["java", "malak"]
 
 
-
